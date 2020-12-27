@@ -181,6 +181,7 @@ func gsettingsSetWallpaper(name, pic, opts string) {
 }
 
 func setWallpaper(desktop, pic, opts, cmd string) {
+	desktop = "null"; // is that good or bad ? i don't know
 	fmt.Println("setting wallpaper for " + desktop)
 	var status int
 	var err error
@@ -456,7 +457,7 @@ func main() {
 		cfgLock.Unlock()
 
 		doJob := func(cfg *Config) {
-			xml := "http://www.bing.com/HPImageArchive.aspx?format=xml&idx=0&n=1&mkt=" + cfg.BingMarket
+			xml := "http://www.bing.com/HPImageArchive.aspx?format=xml&idx=0&n=1"
 			pic := downloadWallpaper(xml, cfg.WallpaperDir)
 			if len(pic) > 0 {
 				fmt.Printf("Downloaded %s\n", pic)

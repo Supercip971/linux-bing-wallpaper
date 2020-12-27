@@ -1,6 +1,6 @@
 bingmarket: "zh-CN"
 wallpaperdir: ""
-desktopenvironment: ""
+desktopenvironment: "none"
 updateinterval: 6h
 pictureoptions: ""
-defaultcommand: "/usr/bin/feh --bg-fill"
+defaultcommand: "nitrogen --head=0 --set-zoom-fill"

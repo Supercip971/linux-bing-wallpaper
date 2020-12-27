@@ -1,3 +1,6 @@
+
+forked Linux Bing Wallpaper for my own need (support for nitrogen and i3)
+
 # Linux Bing Wallpaper
 
 It sets Bing.com wallpaper of the Day as your Linux Desktop
